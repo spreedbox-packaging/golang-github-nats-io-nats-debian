@@ -7,5 +7,5 @@ export DH_GOPKG := github.com/nats-io/nats
 #export DEB_BUILD_OPTIONS=nocheck
 
 %:
-	dh $@ --buildsystem=golang --with=golang --fail-missing
+	dh $@ --buildsystem=golang --with=golang --fail-missing --with quilt
 

@@ -5,7 +5,8 @@ Uploaders: Simon Eisenmann <simon@struktur.de>
 Build-Depends: debhelper (>= 9),
                dh-golang,
                golang-go (>= 1.4.0),
-               golang-goprotobuf-dev
+               golang-goprotobuf-dev,
+               quilt
 Standards-Version: 3.9.4
 Section: devel
 Homepage: http://nats.io

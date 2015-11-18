@@ -1,0 +1,22 @@
+--- a/encoders/protobuf/protobuf_enc.go
++++ b/encoders/protobuf/protobuf_enc.go
+@@ -5,7 +5,7 @@
+ import (
+ 	"errors"
+ 
+-	"github.com/golang/protobuf/proto"
++	"code.google.com/p/goprotobuf/proto"
+ 	"github.com/nats-io/nats"
+ )
+ 
+--- a/encoders/protobuf/testdata/pbtest.pb.go
++++ b/encoders/protobuf/testdata/pbtest.pb.go
+@@ -13,7 +13,7 @@
+ */
+ package testdata
+ 
+-import proto "github.com/golang/protobuf/proto"
++import proto "code.google.com/p/goprotobuf/proto"
+ 
+ // Reference imports to suppress errors if they are not otherwise used.
+ var _ = proto.Marshal
