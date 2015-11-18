@@ -1,4 +1,4 @@
-golang-nats (1.1.2-1) unstable; urgency=low
+golang-nats (1.1.2-1) trusty; urgency=low
 
   * Initial release 
 
