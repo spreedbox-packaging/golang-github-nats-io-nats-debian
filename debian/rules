@@ -9,3 +9,12 @@ export DH_GOPKG := github.com/nats-io/nats
 %:
 	dh $@ --buildsystem=golang --with=golang --fail-missing --with quilt
 
+# we need the builddir; is there a simpler way to get it?
+BUILDDIR:=${CURDIR}/obj-$(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
+
+override_dh_auto_build:
+	rm -f ${BUILDDIR}/src/${DH_GOPKG}/*_test.go
+	rm -rf ${BUILDDIR}/src/${DH_GOPKG}/test
+	dh_auto_build
+
+override_dh_auto_test:
