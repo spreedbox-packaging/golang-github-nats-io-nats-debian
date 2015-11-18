@@ -1,0 +1,19 @@
+Source: golang-nats
+Priority: optional
+Maintainer: struktur AG <opensource@struktur.de>
+Uploaders: Simon Eisenmann <simon@struktur.de>
+Build-Depends: debhelper (>= 9),
+               dh-golang,
+               golang-go (>= 1.4.0),
+               golang-goprotobuf-dev
+Standards-Version: 3.9.4
+Section: devel
+Homepage: http://nats.io
+Vcs-Git: https://github.com/nats-io/nats.git
+
+Package: golang-nats-dev
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A Go client for the NATS messaging system
+ Golang client for NATS, the cloud native messaging system
+

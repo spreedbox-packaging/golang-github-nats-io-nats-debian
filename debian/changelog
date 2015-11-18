@@ -1,0 +1,5 @@
+golang-nats (1.1.2-1) unstable; urgency=low
+
+  * Initial release 
+
+ -- Simon Eisenmann <simon@struktur.de>  Wed, 18 Nov 2015 10:59:43 +0100
