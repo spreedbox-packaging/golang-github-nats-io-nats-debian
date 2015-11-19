@@ -1,1 +1,2 @@
 protobuff-googlecode.diff
+0001-Fix-64bit-alignment-of-Conn.ssid-to-avoid-crash-of-a.patch

@@ -1,3 +1,10 @@
+golang-nats (1.1.2-2) trusty; urgency=medium
+
+  * Fix 64bit alignment, to fix crash on 32bit.
+    See https://github.com/nats-io/nats/pull/111 
+
+ -- Simon Eisenmann <simon@struktur.de>  Thu, 19 Nov 2015 10:35:26 +0100
+
 golang-nats (1.1.2-1) trusty; urgency=low
 
   * Initial release 
