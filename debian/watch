@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/golang-nats-$1\.tar\.gz/ \
+  https://github.com/nats-io/nats/tags .*/v?(\d\S*)\.tar\.gz
